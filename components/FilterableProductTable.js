@@ -23,7 +23,7 @@ var FilterableProductTable = React.createClass({
 
   handleUserInput: function(filterText, inStockOnly) {
     this.setState({
-      filterText: filterText,
+      filterText: filterText,  // the 2nd filterText and inStockOnly are set by the arguments passed into the function
       inStockOnly: inStockOnly
     });
   },

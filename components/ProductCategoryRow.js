@@ -6,6 +6,6 @@
 
 var ProductCategoryRow = React.createClass({
   render: function() {
-    return (<tr><th colSpan="2">{this.props.category}</th></tr>);
+    return (<tr><th colSpan="2">{this.props.category}</th></tr>);  //this.props.category => comes from ProductTable.js line 16
   }
 });

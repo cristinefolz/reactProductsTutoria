@@ -6,9 +6,9 @@
 
 var SearchBar = React.createClass({
   handleChange: function() {
-    this.props.onUserInput(
-      this.refs.filterTextInput.value,
-      this.refs.inStockOnlyInput.checked
+    this.props.onUserInput(  // this.props allows access to all properties assigned to SearchBar in the parent Component
+      this.refs.filterTextInput.value,  // this.refs = a way to reference an object w/React (jquery would use id)
+      this.refs.inStockOnlyInput.checked  // 
     );
   },
   render: function() {
@@ -33,5 +33,6 @@ var SearchBar = React.createClass({
         </p>
       </form>
     );
+    // {' '} = evaluate ' ' as a string; injects a space between the check box and it's label
   }
 });
